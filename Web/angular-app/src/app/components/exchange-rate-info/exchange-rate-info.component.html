@@ -1,0 +1,18 @@
+<table  *ngIf="rate" class='table' aria-labelledby="tableLabel" >
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Currency code</th>
+        <th>Amount</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ rate.date }}</td>
+        <td>{{ rate.currencyCode }}</td>
+        <td>{{ rate.currencyAmount }}</td>
+        <td>{{ rate.rate }}</td>
+      </tr>
+    </tbody>
+  </table>

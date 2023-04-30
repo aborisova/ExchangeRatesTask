@@ -1,0 +1,23 @@
+<form class="select-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label for="date">Date</label>
+      <input
+        id = "date"
+        type="date"
+        name="date"
+        max={{currentDate}}
+        [(ngModel)]="date"
+        placeholder="Choose date"
+      />
+    </div>
+    <div class="form-control">
+      <label for="currency">Currency</label>
+      <select name="mySelect" id="mySelect"
+      ng-options="this.currencyOptions"
+      [(ngModel)]="selectedOption">
+      <option [value]="item" *ngFor="let item of currencyOptions">{{item}}</option>
+    </select>
+    </div>
+    <input type="submit" value="Get rate" class="btn btn-block" />
+  </form>
+  

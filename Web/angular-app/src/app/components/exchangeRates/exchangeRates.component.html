@@ -1,0 +1,8 @@
+<header>
+    <h1>Exchange rates for Czech koruna</h1>
+</header>
+<app-select-form (onGetRate)="getRate($event)"></app-select-form>
+<app-exchange-rate-info
+  [rate]="exchangeRate"
+></app-exchange-rate-info>
+
